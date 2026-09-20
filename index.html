@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crysmos · 定制专属能量</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-logo">仪玄的手串店</div>
+
+    <nav class="nav-links" aria-label="主导航">
+      <ul>
+        <li><button type="button" class="nav-btn is-active" data-nav="home">首页</button></li>
+        <li><button type="button" class="nav-btn" data-nav="design">设计</button></li>
+        <li><button type="button" class="nav-btn" data-nav="about">我的手串</button></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <button type="button" class="icon-btn" aria-label="主题切换">☾</button>
+      <button type="button" class="lang-btn">仪玄出品</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="hero-section">
+      <div class="hero-left">
+        <div class="hero-content">
+          <span class="hero-tag">治愈能量，与你相伴</span>
+          <h1 class="hero-title">
+            定制专属能量，<br>
+            <span class="title-highlight">佩戴指尖奇迹</span>
+          </h1>
+          <p class="hero-subtitle">设计独一无二的能量饰界，开启契合你本真灵性的水晶奇旅</p>
+        </div>
+
+        <div class="cta-buttons">
+          <button type="button" class="btn-primary">✎ 开始设计</button>
+        </div>
+
+
+      </div>
+
+      <div class="product-image">
+        <div class="product-card">
+          <img class="product-img" src="bbb.png" alt="专属设计">
+        </div>
+
+        <div class="product-dots" aria-hidden="true">
+          <span class="dot is-active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 五行能量手串 ====== -->
+    <section class="wuxing-section">
+      <div class="wuxing-header">
+        <span class="wuxing-kicker">Pick your vibe!</span>
+        <h2 class="wuxing-title">五行能量手串</h2>
+        <p class="wuxing-subtitle">根据传统五行理论，精选对应能量宝石，平衡身心，提升运势</p>
+      </div>
+
+      <div class="wuxing-cards">
+        <!-- 青木生机 -->
+        <article class="wu-card wu-card--wood">
+          <div class="wu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 L12 22"/>
+              <path d="M12 4 L8 9"/>
+              <path d="M12 4 L16 9"/>
+              <path d="M12 9 L7 14"/>
+              <path d="M12 9 L17 14"/>
+            </svg>
+          </div>
+          <h3 class="wu-card__title">青木生机</h3>
+          <p class="wu-card__desc">增强生命力与成长能量</p>
+          <img class="wu-card__img" src="bbb.png" alt="青木生机手串">
+          <button type="button" class="wu-card__btn" data-wuxing="wood">去设计</button>
+        </article>
+
+        <!-- 火焰热情 -->
+        <article class="wu-card wu-card--fire">
+          <div class="wu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E65100" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22 C12 22 18 18 18 13 C18 9.5 15.5 6 12 3 C12 3 10 6 8 8 C6 10 6 13 6 13 C6 18 12 22 12 22Z"/>
+              <path d="M12 18 C12 18 14 16 14 14 C14 12.5 13 11 12 10 C12 10 11 11 10.5 12 C10 13 10 14 10 14 C10 16 12 18 12 18Z"/>
+            </svg>
+          </div>
+          <h3 class="wu-card__title">火焰热情</h3>
+          <p class="wu-card__desc">增强活力与自信</p>
+          <img class="wu-card__img" src="bbb.png" alt="火焰热情手串">
+          <button type="button" class="wu-card__btn" data-wuxing="fire">去设计</button>
+        </article>
+
+        <!-- 大地稳固 -->
+        <article class="wu-card wu-card--earth">
+          <div class="wu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5D4037" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 20 L12 4 L22 20"/>
+              <path d="M6 20 L12 10 L18 20"/>
+            </svg>
+          </div>
+          <h3 class="wu-card__title">大地稳固</h3>
+          <p class="wu-card__desc">增强稳定性与安全感</p>
+          <img class="wu-card__img" src="bbb.png" alt="大地稳固手串">
+          <button type="button" class="wu-card__btn" data-wuxing="earth">去设计</button>
+        </article>
+
+        <!-- 金耀光芒 -->
+        <article class="wu-card wu-card--metal">
+          <div class="wu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#607D8B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20"/>
+              <line x1="20" y1="4" x2="4" y2="20"/>
+            </svg>
+          </div>
+          <h3 class="wu-card__title">金耀光芒</h3>
+          <p class="wu-card__desc">增强清晰思维与决策力</p>
+          <img class="wu-card__img" src="bbb.png" alt="金耀光芒手串">
+          <button type="button" class="wu-card__btn" data-wuxing="metal">去设计</button>
+        </article>
+
+        <!-- 水韵灵动 -->
+        <article class="wu-card wu-card--water">
+          <div class="wu-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0288D1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22 C12 22 20 18 20 13 C20 8 16 4 12 2 C8 4 4 8 4 13 C4 18 12 22 12 22Z"/>
+            </svg>
+          </div>
+          <h3 class="wu-card__title">水韵灵动</h3>
+          <p class="wu-card__desc">增强智慧与直觉</p>
+          <img class="wu-card__img" src="bbb.png" alt="水韵灵动手串">
+          <button type="button" class="wu-card__btn" data-wuxing="water">去设计</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== 我的手串界面 ====== -->
+    <section class="my-bracelets-section" id="my-bracelets-section">
+      <div class="my-bracelets-container">
+        <div class="my-bracelets-header">
+          <h2 class="my-bracelets-title">我的手串</h2>
+          <p class="my-bracelets-subtitle">查看和管理你的专属设计</p>
+        </div>
+
+        <div class="bracelets-grid" id="bracelets-grid">
+          <div class="empty-state">
+            <div class="empty-icon">💎</div>
+            <p class="empty-text">暂无设计的手串</p>
+            <p class="empty-hint">去设计界面创建你的专属手串吧！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 设计界面 ====== -->
+    <section class="design-section" id="design-section">
+      <div class="design-container">
+        <!-- 左侧素材面板 -->
+        <div class="material-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">✎ 素材</h2>
+          </div>
+          
+          <div class="panel-filters">
+            <div class="filter-group">
+              <span class="filter-label">类型:</span>
+              <select class="filter-select">
+                <option>全部</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">颜色:</span>
+              <select class="filter-select">
+                <option>全部</option>
+                <option>红色</option>
+                <option>绿色</option>
+                <option>蓝色</option>
+                <option>黄色</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">尺寸:</span>
+              <select class="filter-select">
+                <option>8mm</option>
+                <option>10mm</option>
+                <option>12mm</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="material-list">
+            <!-- 红色系 -->
+            <div class="color-section">
+              <span class="color-label">● 红色</span>
+              <div class="material-grid">
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="1.png" alt="玛瑙" />
+                  <span class="material-name">玛瑙</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="2.png" alt="玛瑙1" />
+                  <span class="material-name">玛瑙1</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="玛瑙2" />
+                  <span class="material-name">玛瑙2</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="玛瑙3" />
+                  <span class="material-name">玛瑙3</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="石榴石" />
+                  <span class="material-name">石榴石</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="石榴石1" />
+                  <span class="material-name">石榴石1</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红色玉髓" />
+                  <span class="material-name">红色玉髓</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红色玉髓2" />
+                  <span class="material-name">红色玉髓2</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红色玉髓3" />
+                  <span class="material-name">红色玉髓3</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红碧玉" />
+                  <span class="material-name">红碧玉</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红碧玉1" />
+                  <span class="material-name">红碧玉1</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红水晶" />
+                  <span class="material-name">红水晶</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="红水晶1" />
+                  <span class="material-name">红水晶1</span>
+                </div>
+                <div class="material-item" data-color="red">
+                  <img class="material-img" src="" alt="太阳石" />
+                  <span class="material-name">太阳石</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 绿色系 -->
+            <div class="color-section">
+              <span class="color-label">● 绿色</span>
+              <div class="material-grid">
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="天河石" />
+                  <span class="material-name">天河石</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿玛瑙" />
+                  <span class="material-name">绿玛瑙</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿玛瑙2" />
+                  <span class="material-name">绿玛瑙2</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿东陵石" />
+                  <span class="material-name">绿东陵石</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿东陵石1" />
+                  <span class="material-name">绿东陵石1</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿萤石" />
+                  <span class="material-name">绿萤石</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="绿萤石1" />
+                  <span class="material-name">绿萤石1</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="翡翠" />
+                  <span class="material-name">翡翠</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="翡翠1" />
+                  <span class="material-name">翡翠1</span>
+                </div>
+                <div class="material-item" data-color="green">
+                  <img class="material-img" src="" alt="苔藓玛瑙" />
+                  <span class="material-name">苔藓玛瑙</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧设计面板 -->
+        <div class="design-panel">
+          <div class="panel-header design-header">
+            <h2 class="panel-title">设计你的手链</h2>
+          </div>
+
+          <p class="design-hint">点击或拖拽水晶到圆形画布上，创建你独一无二的手链。</p>
+
+          <div class="design-controls">
+            <div class="control-group">
+              <span class="control-label">手围选择:</span>
+              <select class="control-select" id="wrist-size">
+                <option>14cm</option>
+                <option>15cm</option>
+                <option>16cm</option>
+                <option>17cm</option>
+                <option>18cm</option>
+                <option>19cm</option>
+                <option>20cm</option>
+              </select>
+            </div>
+            <!--<button type="button" class="btn-generate">去看看我的设计</button> -->
+          </div>
+
+          <div class="canvas-container">
+            <div class="bracelet-canvas">
+              <div class="canvas-ring" id="canvas-ring"></div>
+              <div class="bead-preview" id="bead-preview"></div>
+            </div>
+
+            <div class="canvas-actions">
+              <button type="button" class="action-btn" title="上一步"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M18 19l-7-7 7-7"/></svg></button>
+              <button type="button" class="action-btn" title="下一步"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M6 5l7 7-7 7"/></svg></button>
+              <button type="button" class="action-btn" title="清空"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V6m3 0V4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v2"/></svg></button>
+            </div>
+          </div>
+
+          <div class="design-actions">
+            <button type="button" class="btn-save">保存设计</button>
+            <button type="button" class="btn-preview">导出设计</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
